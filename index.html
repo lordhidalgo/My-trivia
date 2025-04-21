@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My trivia.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #2b2d42;
+      color: white;
+    }
+    #options button {
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    #options button:hover {
+      background-color: #ff9f00;
+      transform: scale(1.1);
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans flex justify-center items-center min-h-screen">
+
+  <div class="bg-gray-800 p-8 rounded-xl shadow-xl w-full max-w-4xl text-center">
+    <h1 class="text-4xl font-bold mb-6 text-yellow-400">My Trivia Game</h1>
+    
+    <div class="text-2xl mb-6" id="question"></div>
+
+    <div id="options" class="grid gap-4 mb-6"></div>
+
+    <div id="score" class="text-xl text-white mb-4">Puntaje: 0 de 10</div>
+
+    <button id="next-btn" class="hidden bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">Siguiente</button>
+
+    <div id="result-message" class="text-2xl text-green-500 mt-6 hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
