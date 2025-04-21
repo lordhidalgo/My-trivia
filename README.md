@@ -22,4 +22,4 @@ This is an interactive trivia game where players answer general knowledge questi
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/lordhidalgo/trivia-game.git
+   git clone https://github.com/lordhidalgo/My-trivia.git
